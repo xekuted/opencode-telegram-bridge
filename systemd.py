@@ -13,7 +13,7 @@ Type=simple
 WorkingDirectory={bridge_dir}
 ExecStart={bridge_dir}/venv/bin/python -m bot
 Environment=PYTHONUNBUFFERED=1
-Restart=on-failure
+Restart=always
 RestartSec=5
 TimeoutStopSec=120
 
