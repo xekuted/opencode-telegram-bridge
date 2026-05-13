@@ -113,7 +113,7 @@ async def _send_chunks(update: Update, text: str) -> None:
     for chunk in chunks:
         for attempt in range(3):
             try:
-                await update.message.reply_text(chunk, parse_mode=ParseMode.MARKDOWN_V2)
+                await update.message.reply_text(chunk)
                 break
             except Exception:
                 if attempt < 2:

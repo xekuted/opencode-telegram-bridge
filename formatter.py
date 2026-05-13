@@ -235,6 +235,5 @@ def chunk_message(text: str, max_len: int = MAX_MESSAGE_LENGTH) -> list[str]:
 
 
 def format_and_chunk(text: str) -> list[str]:
-    """Format a message for Telegram and split into sendable chunks."""
-    formatted = format_message(text)
-    return chunk_message(formatted)
+    """Split a message into sendable chunks (plain text, no formatting)."""
+    return chunk_message(text)
